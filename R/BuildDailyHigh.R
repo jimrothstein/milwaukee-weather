@@ -5,7 +5,7 @@ library(dplyr)
 library(lubridate)
 library(stringr)
 
-# Eugene airport
+# Eugene airport  (this file:  change in 2 places)
 #"data/GHCN_USW00024221.csv"
 
 ghcn  <- read_csv("data/GHCN_USW00024221.csv")
@@ -222,6 +222,7 @@ max.graph2 <- max.graph +
                            min.segment.length = 0, size = 3,
                            direction = "y", hjust = 1, nudge_x = -5)
 
-ggsave("graphs/DailyHighTemp_US1ORLA0007.png", plot = max.graph2,
-#ggsave("graphs/DailyHighTemp_USW00014839.png", plot = max.graph2,
+ggsave("graphs/DailyHighTemp_USW00024221.png", plot = max.graph2,
        width = 8, height = 4)
+
+# ggsave("graphs/DailyHighTemp_USW00014839.png", plot = max.graph2,
