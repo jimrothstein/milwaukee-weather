@@ -12,9 +12,11 @@ library(tidyr)
 # obtain the updated file
 #   readr::read_csv downloads and unzips .csv.gz
 
+# Eug airport GHCND:USW00024221
 ghcn <- data.table::fread(
   #"https://www1.ncdc.noaa.gov/pub/data/ghcn/daily/by_station/US1ORLA0007.csv.gz",
-  "https://www1.ncdc.noaa.gov/pub/data/ghcn/daily/by_station/US1ORLA0010.csv.gz",
+  #"https://www1.ncdc.noaa.gov/pub/data/ghcn/daily/by_station/US1ORLA0010.csv.gz",
+  "https://www1.ncdc.noaa.gov/pub/data/ghcn/daily/by_station/USW00024221.csv.gz",
   #"https://www1.ncdc.noaa.gov/pub/data/ghcn/daily/by_station/USW00014839.csv.gz",
                           col.names = c("id", "yearmoda", "element", "value",
                                         "mflag", "qflag", "sflag", "obs_time"),
