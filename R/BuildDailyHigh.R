@@ -5,10 +5,10 @@ library(dplyr)
 library(lubridate)
 library(stringr)
 
-# Eugene
-# US1ORLA0007.csv
+# Eugene airport
+#"data/GHCN_USW00024221.csv"
 
-ghcn <- read_csv("data/GHCN_US1ORLA0007.csv")
+ghcn  <- read_csv("data/GHCN_USW00024221.csv")
 #ghcn <- read_csv("data/GHCN_USW00014839.csv")
 
 year.to.plot <- max(ghcn$year)
